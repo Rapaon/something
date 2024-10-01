@@ -24,4 +24,26 @@ public class Asteroid : MonoBehaviour
     {
         
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("projectile"))
+        {
+            gameManager.asteroidCount--;
+            Destroy(collision.gameObject);
+            
+            if (size > 1)
+            {
+                for (int i = 0; i < 2; i++)
+                {
+                    Asteroid newAsteroid = Instantiate(this, transform.position, Quaternion.identity);
+                    newAsteroid.size = size - 1;
+                    newAsteroid.gameManager = gameManager;
+
+                }
+            }
+
+            Destroy(gameObject);
+        }
+    }
 }
