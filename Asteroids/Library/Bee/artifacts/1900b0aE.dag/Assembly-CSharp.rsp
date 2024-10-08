@@ -376,9 +376,15 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/scripts/Asteroid.cs"
+"Assets/scripts/Asteroid1.cs"
+"Assets/scripts/Asteroid2.cs"
+"Assets/scripts/Asteroid3.cs"
 "Assets/scripts/GameManager.cs"
+"Assets/scripts/Heart.cs"
+"Assets/scripts/Menu.cs"
 "Assets/scripts/Player.cs"
 "Assets/scripts/Projectile.cs"
+"Assets/scripts/scores.cs"
 "Assets/scripts/Wrap.cs"
 -langversion:9.0
 

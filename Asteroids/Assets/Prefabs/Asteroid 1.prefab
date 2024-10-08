@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 4031385785510751097}
   - component: {fileID: 4031385785510751096}
   - component: {fileID: 4031385785510751079}
-  - component: {fileID: 4031385785510751078}
+  - component: {fileID: 2095351383327553101}
   m_Layer: 0
   m_Name: Asteroid 1
-  m_TagString: Untagged
+  m_TagString: asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85e976a48ed06242828d30488c07fbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4031385785510751078
+--- !u!114 &2095351383327553101
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,8 +146,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 4031385785510751077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d7f631c77a97174f9b81ecfa9f2ab19, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f6caa14a125ba94db2a2ca2b55ff91b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 4
+  size: 3
   gameManager: {fileID: 0}

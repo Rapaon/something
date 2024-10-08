@@ -30,6 +30,7 @@ public class Asteroid : MonoBehaviour
         if (collision.CompareTag("projectile"))
         {
             gameManager.asteroidCount--;
+            gameManager.score += 1;
             Destroy(collision.gameObject);
             
             if (size > 1)

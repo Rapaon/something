@@ -5,8 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [Header("ship parameters")]
-    [SerializeField] private float shipAcceleration = 10f;
-    [SerializeField] private float shipMaxVelocity = 10f;
+    [SerializeField] private float shipAcceleration = 1f;
+    [SerializeField] private float shipMaxVelocity = 1f;
     [SerializeField] private float shipRotationSpeed = 180f;
     [SerializeField] private float bulletSpeed = 8f;
 
@@ -81,4 +81,24 @@ public class Player : MonoBehaviour
             bullet.AddForce(bulletSpeed * transform.up, ForceMode2D.Impulse);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("asteroid"))
+        {
+          
+          GameManager gameManager = FindObjectOfType<GameManager>(); // Changed to FindObjectOfType
+          gameManager.health--;
+          if (gameManager != null)
+          {
+            if (gameManager.health <= 0)
+            {
+             isAlive = false;
+             gameManager.GameOver();
+             Destroy(gameObject);
+            }          
+          }
+        }
+    }
+
 }

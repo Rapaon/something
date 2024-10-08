@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8132104778458600558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8132104778458600556}
+  - component: {fileID: 8132104778458600557}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8132104778458600556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8132104778458600558}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.15744355, y: -0.3292332, z: 0.02826541}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8132104778458600557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8132104778458600558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e27a2596447e1643b8ccdc361c46789, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroidPrefab: {fileID: 4031385785510751078, guid: 8e524947e9a77da4cbd1c10e9696c439, type: 3}
+  asteroid1Prefab: {fileID: 2095351383327553101, guid: 1268f1c75f96fb743bb0232a966121db, type: 3}
+  asteroid2Prefab: {fileID: 2799139235811255042, guid: 32f2de37d2af0c946a08251833a5142a, type: 3}
+  asteroid3Prefab: {fileID: 5554689701223109977, guid: 8c9ddcf2d4fc5814e8cb218a464bae7e, type: 3}
+  asteroidCount: 0
+  asteroid1Count: 0
+  asteroid2Count: 0
+  asteroid3Count: 0
+  score: 0
+  health: 3
+  healthTxt: {fileID: 0}
+  scoreTxt: {fileID: 0}
+  highScoreTxt: {fileID: 0}
